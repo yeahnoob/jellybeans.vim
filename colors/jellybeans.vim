@@ -510,7 +510,8 @@ if !s:low_color
   exec "hi NonText ctermbg=".g:jellybeans_background_color_256
   exec "hi LineNr ctermbg=".g:jellybeans_background_color_256
   hi DiffText ctermfg=81
-  hi Normal ctermbg=None
+  hi Normal ctermfg=252 ctermbg=None
+  hi Visual ctermbg=53
   hi DbgBreakPt ctermbg=53
   hi IndentGuidesOdd ctermbg=235
   hi IndentGuidesEven ctermbg=234
