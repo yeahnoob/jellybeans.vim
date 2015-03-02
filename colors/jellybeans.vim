@@ -327,7 +327,7 @@ endif
 call s:X("Visual","","404040","","",s:termBlack)
 call s:X("Cursor",g:jellybeans_background_color,"b0d0f0","","","")
 
-call s:X("LineNr","605958",g:jellybeans_background_color,"none",s:termBlack,"")
+call s:X("LineNr","605958",g:jellybeans_background_color,"",s:termBlack,"")
 call s:X("CursorLineNr","ccc5c4","","none","White","")
 call s:X("Comment","888888","","italic","Grey","")
 call s:X("Todo","c7c7c7","","bold","White",s:termBlack)
@@ -507,8 +507,8 @@ if !s:low_color
   hi CursorColumn ctermbg=234
   hi CursorLine ctermbg=234
   hi SpecialKey ctermbg=234
-  exec "hi NonText ctermbg=".g:jellybeans_background_color_256
-  exec "hi LineNr ctermbg=".g:jellybeans_background_color_256
+  hi NonText ctermbg=None
+  hi LineNr ctermbg=None
   hi DiffText ctermfg=81
   hi Normal ctermfg=252 ctermbg=None
   hi Visual ctermbg=53
